@@ -44,10 +44,11 @@ routes.post("/builder-results", (req, res) => {
       cost2 = 2.00;
   }
   price = cost1 + cost2;
+  let displayPrice = price.toFixed(2);
   if (price > 15) {
       free = true;
   }
-  res.render("builder-results", { size, topping, gluten, special, price, free });
+  res.render("builder-results", { size, topping, gluten, special, displayPrice, free });
 });
 
 export default routes;
