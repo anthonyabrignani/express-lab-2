@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>Your Pizza</title>
+</head>
+
+<body>
+    <h1>Your Pizza</h1>
+    <p>Size: {{ size }}</p>
+    <p>Toppings: {{ topping }}</p>
+    <p>Gluten-Free Crust: {{ gluten }}</p>
+    <p>Special Instructions: {{ special }}</p>
+    <p>Price: {{ price }}</p>
+    {{#if free}}
+    <p>Because your order meets the $15.00 minimum, you get FREE DELIVERY!</p>
+    {{/if}}
+    <a href="/builder">Build another pizza</a>
+    <a href="/">Back to Homepage</a>
+</body>
+
+</html>

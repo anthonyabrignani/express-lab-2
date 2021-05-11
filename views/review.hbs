@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>Review Form</title>
+</head>
+
+<body>
+    <h1>Leave a Review</h1>
+    <form action="/review-results" method="post">
+        <p>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" />
+        </p>
+        <p>
+            <label for="comment">Comment</label>
+            <input type="text" id="comment" name="comment" />
+        </p>
+        <p>
+            <label for="rating">5 (Best)</label>
+            <input type="radio" name="rating" value="5"/>
+        </p>
+        <p>
+            <label for="rating">4</label>
+            <input type="radio" name="rating" value="4"/>
+        </p>
+        <p>
+            <label for="rating">3</label>
+            <input type="radio" name="rating" value="3"/>
+        </p>
+        <p>
+            <label for="rating">2</label>
+            <input type="radio" name="rating" value="2"/>
+        </p>
+        <p>
+            <label for="rating">1</label>
+            <input type="radio" name="rating" value="1"/>
+        </p>
+        <p><button type="submit">Submit</button></p>
+        <a href="/">Back To Homepage</a>
+    </form>
+</body>
+
+</html>

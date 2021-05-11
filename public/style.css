@@ -1,0 +1,41 @@
+* {
+    font-family: 'Pangolin', cursive;
+}
+
+body {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    color: black;
+    font-size: 3em;
+}
+
+h2 {
+    color: darkred;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#comment {
+    padding: 50px;
+    font-size: 1em;
+}
